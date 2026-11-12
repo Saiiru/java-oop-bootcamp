@@ -9,3 +9,10 @@
 ---
 
 Este repositório ainda não contém uma aplicação executável documentada.
+
+
+## Verificação do código em 12/11/2026
+
+JDK 21 · javac + java Main, tests/smoke.sh: progressão/identidade/XP passou
+
+**Limitações:** Exercício POO, não aplicação com banco ou serviço remoto.

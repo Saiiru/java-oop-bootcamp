@@ -4,8 +4,11 @@ import java.util.LinkedHashSet;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.Set;
+import java.util.UUID;
 
 public class Dev {
+    // Immutable identity keeps Set membership stable as enrollment/progress changes.
+    private final UUID id = UUID.randomUUID();
     private String name;
     private Set<Conteudo> subscribedContent = new LinkedHashSet<>();
     private Set<Conteudo> completedContent = new LinkedHashSet<>();
@@ -54,12 +57,12 @@ public class Dev {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Dev dev = (Dev) o;
-        return Objects.equals(name, dev.name) && Objects.equals(subscribedContent, dev.subscribedContent) && Objects.equals(completedContent, dev.completedContent);
+        return Objects.equals(id, dev.id);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, subscribedContent, completedContent);
+        return id.hashCode();
     }
 
     public void setCompletedContent(Set<Conteudo> completedContent) {
