@@ -35,3 +35,14 @@ Desafio de fundamentos da DIO. Créditos, fontes de tutoriais e colaboradores de
 **Ainda não é:** sistema integrado à KORA, serviço em produção ou prova de maturidade sem testes.
 
 [Voltar ao portfólio SAIRU/BLACKSITE](https://saiiru.github.io/#projetos-independentes)
+
+
+## Verificação de funcionamento — 12/11/2026
+
+**Estado confirmado:** Exercício Java compilado e testado
+
+**Evidência:** JDK 21 · javac + java Main, tests/smoke.sh: progressão/identidade/XP passou
+
+**Limites e bloqueios:** Exercício POO, não aplicação com banco ou serviço remoto.
+
+Esta validação não implica integração à KORA nem certificação de produção. Não alterar histórico, licença e autoria dos tutoriais.
